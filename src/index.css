@@ -3,19 +3,28 @@
 @tailwind utilities;
 
 * {
-    color: #fff;
+  color: #fff;
 }
 
 body {
-    background-color: #111;
+  background-color: #111;
 }
 
 #tasklist::-webkit-scrollbar {
-    background-color: lightseagreen;
-    height: 5px;
+  background-color: lightseagreen;
+  height: 5px;
 }
 
 #tasklist::-webkit-scrollbar-thumb {
-    background: yellow;
-    height: 2px;
-  }
+  background: yellow;
+  height: 2px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
