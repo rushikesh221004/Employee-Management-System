@@ -9,3 +9,13 @@
 body {
     background-color: #111;
 }
+
+#tasklist::-webkit-scrollbar {
+    background-color: lightseagreen;
+    height: 5px;
+}
+
+#tasklist::-webkit-scrollbar-thumb {
+    background: yellow;
+    height: 2px;
+  }
